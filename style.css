@@ -1,0 +1,75 @@
+@import "reset.css";
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f6f9fc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.canvas {
+  width: 100%;
+  height: 60%;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.controls {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls .controls__btns {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.controls__btns button {
+  all: unset;
+  width: 20%;
+  padding: 5px 0px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.controls__btns button:active {
+  transform: scale(0.98);
+}
+
+.controls .controls__colors {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+
+.controls__color {
+  width: 8%;
+  padding-bottom: 8%;
+  border-radius: 100%;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.controls__color:hover {
+  transform: scale(1.1);
+}
