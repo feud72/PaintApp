@@ -11,64 +11,78 @@
     <canvas id="jsCanvas" class="canvas"></canvas>
     <div class="controls">
       <div class="controls__range">
-        <span>thin</span>
-        <input
-          type="range"
-          id="jsRange"
-          min="0.1"
-          max="5.0"
-          value="2.5"
-          step="0.1"
-        />
-        <span>thick</span>
+        <div class="range__column">
+          <div class="range__column__element">
+            펜 두께 : <span id="jsPenWidthText">2.5</span>px
+          </div>
+          <div class="range__column__element">
+            <input
+              type="range"
+              id="jsPenWidth"
+              min="0.1"
+              max="5.0"
+              value="2.5"
+              step="0.1"
+            />
+          </div>
+        </div>
+        <div class="range__column">
+          <div class="range__column__element">
+            투명도 : <span id="jsOpacityText">0.30</span>
+          </div>
+          <div class="range__column__element">
+            <input
+              type="range"
+              id="jsOpacity"
+              min="0"
+              max="1"
+              value="0.3"
+              step="0.01"
+            />
+          </div>
+        </div>
       </div>
       <div class="controls__btns">
-        <button id="jsMode">
-          Fill
-        </button>
-        <button id="jsSave">
-          Save
-        </button>
-        <button id="jsClear">
-          Clear
-        </button>
+        <button id="jsMode">현재 모드 : 펜</button>
+        <button id="jsSave">저장</button>
+        <button id="jsClear">초기화</button>
       </div>
       <div class="controls__colors" id="jsColors">
         <div
           class="controls__color jsColor"
-          style="background-color:rgba(44,44,44, 1)"
+          style="background-color:rgb(44,44,44)"
         ></div>
         <div
           class="controls__color jsColor"
-          style="background-color:rgba(255,255,255, 1)"
+          style="background-color:rgb(255,255,255)"
         ></div>
         <div
           class="controls__color jsColor"
-          style="background-color:rgba(255, 59, 48, 1)"
+          style="background-color:rgb(255, 59, 48)"
         ></div>
         <div
           class="controls__color jsColor"
-          style="background-color:rgba(255, 149, 0, 1)"
+          style="background-color:rgb(255, 149, 0)"
         ></div>
         <div
           class="controls__color jsColor"
-          style="background-color:rgba(255, 204, 0, 1)"
+          style="background-color:rgb(255, 204, 0)"
         ></div>
         <div
           class="controls__color jsColor"
-          style="background-color:rgba(76, 217, 99, 1)"
+          style="background-color:rgb(76, 217, 99)"
         ></div>
         <div
           class="controls__color jsColor"
-          style="background-color:rgba(90, 200, 250, 1)"
+          style="background-color:rgb(90, 200, 250)"
         ></div>
         <div
           class="controls__color jsColor"
-          style="background-color:rgba(5, 121, 255, 1)"
+          style="background-color:rgb(5, 121, 255)"
         ></div>
         <div
           class="controls__color jsColor"
-          style="background-color:rgba(88, 86, 214, 1)"
+          style="background-color:rgb(88, 86, 214)"
         ></div>
       </div>
     </div>
